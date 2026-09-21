@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard - Discover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-icon">D</div>
+            <span>DevBoard</span>
+        </div>
+
+        <div class="top-actions">
+            <div class="completed-counter">
+                <span class="check-icon">✓</span>
+                <span id="completedCount">23</span>
+            </div>
+            <button id="colorChangeBtn" class="color-button" type="button" aria-label="Change background color">
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="questions-page">
+        <div class="questions-header">
+            <button id="backBtn" class="back-button" type="button">← Back to DevBoard</button>
+            <h1>Discover Something New Today!</h1>
+            <p>DOM and JavaScript Questions & Answers</p>
+        </div>
+
+        <section class="question-list">
+            <article class="question-card">
+                <h2>Question-1: What are the different ways to select an element in the DOM?</h2>
+                <p>We can select elements using <code>getElementById</code>, <code>getElementsByClassName</code>, <code>getElementsByTagName</code>, <code>querySelector</code>, and <code>querySelectorAll</code>.</p>
+            </article>
+
+            <article class="question-card">
+                <h2>Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+                <p><code>innerHTML</code> returns HTML content, <code>innerText</code> gets visible text, and <code>textContent</code> retrieves all text, including hidden elements.</p>
+            </article>
+
+            <article class="question-card">
+                <h2>Question-3: What is event delegation in the DOM?</h2>
+                <p>Event delegation is a technique where you add a single event listener to a parent element to handle events for all its current and future child elements, leveraging event bubbling.</p>
+            </article>
+
+            <article class="question-card">
+                <h2>Question-4: What is event bubbling in the DOM?</h2>
+                <p>Event bubbling is a mechanism in the DOM where an event triggered on a child element propagates upward through its parent elements in the hierarchy.</p>
+            </article>
+
+            <article class="question-card">
+                <h2>Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                <p>We can create an element using <code>document.createElement()</code>, add it with <code>appendChild()</code>, and remove it with <code>removeChild()</code>.</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

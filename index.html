@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-icon">D</div>
+            <span>DevBoard</span>
+        </div>
+
+        <div class="top-actions">
+            <div class="completed-counter">
+                <span class="check-icon">✓</span>
+                <span id="completedCount">23</span>
+            </div>
+            <button id="colorChangeBtn" class="color-button" type="button" aria-label="Change background color">
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="main-section">
+            <div class="summary-row">
+                <div class="summary-card assigned-card">
+                    <div class="summary-icon">✓</div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <strong id="taskCount">6</strong>
+                    </div>
+                </div>
+
+                <button id="discoverBtn" class="discover-card" type="button">
+                    <span class="discover-icon">📝</span>
+                    <span>Discover Something New Today!</span>
+                </button>
+
+                <div class="summary-card date-card">
+                    <div class="calendar-icon">▣</div>
+                    <span id="currentDate">Tue Feb 25 2025</span>
+                </div>
+            </div>
+
+            <div id="taskGrid" class="task-grid"></div>
+        </section>
+
+        <aside class="activity-panel">
+            <div class="activity-header">
+                <div class="activity-title">
+                    <span class="history-icon">◷</span>
+                    <span>Activity Log</span>
+                </div>
+                <button id="clearHistoryBtn" type="button">Clear History</button>
+            </div>
+
+            <div id="activityLog" class="activity-log">
+                <p class="empty-log">No activity yet.</p>
+            </div>
+        </aside>
+    </main>
+
+    <div id="alertBox" class="alert-box" role="alert" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
